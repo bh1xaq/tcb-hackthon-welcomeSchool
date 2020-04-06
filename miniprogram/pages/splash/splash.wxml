@@ -1,0 +1,4 @@
+<!--miniprogram/pages/splash/splash.wxml-->
+<view class="splash">
+ <image src="{{splashImg}}" mode="scaleToFill"></image>
+</view>

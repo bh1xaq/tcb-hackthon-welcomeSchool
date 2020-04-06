@@ -1,0 +1,38 @@
+<!--miniprogram/pages/bigData/bigData.wxml-->
+<import src="/template/template.wxml" />
+<cu-custom bgColor="bg-gradual-blue" isBack="true">
+	<view slot="backText">返回</view>
+	<view slot="content">新生大数据</view>
+</cu-custom>
+<!--综合统计-->
+<view class="padding flex text-center text-grey bg-white shadow-warp">
+	<view class="flex flex-sub flex-direction solid-right">
+		<view class="text-xxl text-orange">{{studentTotal}}</view>
+		<view class="margin-top-sm">
+			<text class="cuIcon-attentionfill"></text> 总人数</view>
+	</view>
+	<view class="flex flex-sub flex-direction solid-right">
+		<view class="text-xxl text-blue">{{reportedCount}}</view>
+		<view class="margin-top-sm">
+			<text class="cuIcon-favorfill"></text> 已报到</view>
+	</view>
+	<view class="flex flex-sub flex-direction">
+		<view class="text-xxl text-green">{{unreportedCount}}</view>
+		<view class="margin-top-sm">
+			<text class="cuIcon-warnfill"></text> 未报到</view>
+	</view>
+</view>
+<view class="container">
+	<!--报到率表（pie）-->
+	<view class="cu-bar flex justify-center">
+		<view class="action">整体报道进度</view>
+	</view>
+	<canvas canvas-id="rate" class="canvas"></canvas>
+	<!--各学院的报道情况（column）-->
+	<view class="cu-bar flex justify-center">
+		<view class="action">各二级学院报道进度</view>
+	</view>
+	<canvas canvas-id="rateByXY" class="canvas"></canvas>
+</view>
+<!--copyright-->
+<template is="copyright"></template>

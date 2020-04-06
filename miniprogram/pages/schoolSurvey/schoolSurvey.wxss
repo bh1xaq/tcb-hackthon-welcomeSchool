@@ -1,0 +1,15 @@
+/* miniprogram/pages/schoolSurvey/schoolSurvey.wxss */
+
+page {
+  height: 100%;
+}
+
+swiper {
+  height: 100%
+}
+
+swiper image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

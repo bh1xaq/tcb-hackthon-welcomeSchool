@@ -1,0 +1,27 @@
+<!--miniprogram/pages/home/atable.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="true">
+  <view slot="backText">返回</view>
+  <view slot="content">电子卡</view>
+</cu-custom>
+<!--一卡通-->
+<view class="container">
+  <view class="panel">
+    <view class="flex align-center header">
+      <view class="flex-sub text-center">{{userId}}</view>
+    </view>
+    <view class="barcode">
+      <canvas canvas-id="payCodeBar" />
+    </view>
+    <view class="qrcode">
+      <canvas canvas-id="payCodeQr" />
+    </view>
+  </view>
+</view>
+<!--提示-->
+<view class="padding-xs flex align-center">
+  <view class="flex-sub text-center">
+    <view class="text-sm padding">
+      <text class="text-white">注意：支付码每30秒刷新一次</text>
+    </view>
+  </view>
+</view>

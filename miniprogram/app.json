@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/index/index",
+    "pages/home/index/index",
+    "pages/home/about/about",
+    "pages/home/modifyInfo/modifyInfo",
+    "pages/home/card/card",
+    "pages/checkin/checkin/checkin",
+    "pages/login/login",
+    "pages/guide/guide",
+    "pages/receivingStation/receivingStation",
+    "pages/accommodation/accommodation",
+    "pages/process/process",
+    "pages/bigData/bigData",
+    "pages/checkin/success/success",
+    "pages/schoolSurvey/schoolSurvey"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/home/index/index",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home_select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

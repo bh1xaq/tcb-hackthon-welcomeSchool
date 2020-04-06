@@ -1,0 +1,31 @@
+<!--miniprogram/pages/process/process.wxml-->
+<import src="../../template/template.wxml" />
+<cu-custom bgColor="bg-gradual-blue" isBack="true">
+  <view slot="backText">返回</view>
+  <view slot="content">注册流程</view>
+</cu-custom>
+<!--大图-->
+<view class="process-tips">
+  <image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/process.png" mode="widthFix"></image>
+</view>
+<!--报道时间轴-->
+<view wx:for="{{processList}}" wx:key class="cu-timeline">
+  <view class="cu-time">{{item.date}}</view>
+  <view class="cu-item">
+    <view class="content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">时间</view>
+        <view class="cu-tag line-cyan">{{item.time}}</view>
+      </view>
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-blue">地点</view>
+        <view class="cu-tag line-blue">{{item.local}}</view>
+      </view>
+      <view class="margin-top text-desc">{{item.text}}</view>
+    </view>
+  </view>
+</view>
+<!--底部-->
+<view>
+  <template is="copyright"></template>
+</view>

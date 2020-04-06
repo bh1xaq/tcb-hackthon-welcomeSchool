@@ -1,0 +1,12 @@
+<!--miniprogram/pages/checkin/success/success.wxml-->
+<import src="/template/template.wxml" />
+<cu-custom class="text-white" isBack="true">
+	<view slot="backText">返回</view>
+</cu-custom>
+<view class="flex justify-center welcome-title">
+	<image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/checkinSuccessTitle.png" mode="widthFix"></image>
+</view>
+<view class="grid col-1 text-xxl text-white animation-slide-bottom welcome-text" style="animation-delay: 0.6s;">
+	<view class="margin">{{userName}}同学：</view>
+	<view class="margin-lr welcome-tips">您已经完成了新生报道，欢迎开始在我校的学习生活！</view>
+</view>

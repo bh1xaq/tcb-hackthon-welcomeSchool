@@ -1,0 +1,32 @@
+<!--miniprogram/pages/accommodation/accommodation.wxml-->
+<import src="/template/template.wxml" />
+<cu-custom bgColor="bg-gradual-orange" class="text-white" isBack="true">
+	<view slot="backText">返回</view>
+	<view slot="content">预约住宿</view>
+</cu-custom>
+<!--大图-->
+<view class="tips">
+	<image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/accommodation.png" mode="widthFix"></image>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+	<view class="action">
+		<text class="cuIcon-title text-blue"></text>在此预约住宿，您的宿舍将由宿管中心随机分配
+	</view>
+</view>
+<!--预约住宿结果-->
+<view class="cu-bar bg-white solid margin-bottom">
+	<view class="action">
+		预约情况：<text class="text-{{YYZS?'black':'gray'}}">{{accommodationTips}}</text>
+	</view>
+</view>
+<!--预约住宿表单-->
+<form bindsubmit="setRsForm">
+	<view class="cu-form-group">
+		<view class="title">预约住宿</view>
+		<switch name="YYZS" class="blue sm" bindchange="switchChange" checked="{{YYZS}}"></switch>
+	</view>
+	<view class="cu-form-group">
+		<button class="cu-btn bg-cyan" type="primary" formType="submit">提交</button>
+	</view>
+</form>
+<template is="copyright"></template>

@@ -1,0 +1,55 @@
+<!--miniprogram/pages/home/index/index.wxml-->
+<scroll-view scroll-y class="scrollPage">
+	<view class="UCenter-bg">
+		<image src="{{avatarUrl}}" class="avatar" mode="widthFix"></image>
+		<view class="text-xl">{{userName}}
+		</view>
+		<view class="margin-top-sm">
+			<text>{{userIdentity}}</text>
+		</view>
+		<image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/ship.png" mode="widthFix" class="ship">
+		</image>
+		<image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/wave.gif" mode="scaleToFill" class="gif-wave">
+		</image>
+	</view>
+	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+		<!--管理员功能-->
+		<block wx:if="{{acl == 1}}">
+			<view class="cu-item arrow">
+				<navigator class="content" url="/pages/bigData/bigData" hover-class="none">
+					<text class="cuIcon-hotfill text-blue"></text>
+					<text class="text-grey">迎新大数据</text>
+				</navigator>
+			</view>
+		</block>
+		<!--学生功能-->
+		<block wx:if="{{acl == 2}}">
+			<view class="cu-item arrow">
+				<navigator class="content" url="/pages/home/modifyInfo/modifyInfo?userId={{userId}}" hover-class="none">
+					<text class="cuIcon-paintfill text-blue"></text>
+					<text class="text-grey">信息维护</text>
+				</navigator>
+			</view>
+			<view class="cu-item arrow">
+				<navigator class="content" url="/pages/home/card/card?userId={{userId}}" hover-class="none">
+					<text class="cuIcon-card text-blue"></text>
+					<text class="text-grey">校园一卡通（电子卡）</text>
+				</navigator>
+			</view>
+		</block>
+		<!--通用功能-->
+		<view class="cu-item arrow">
+			<navigator class="content" url="/pages/home/about/about" hover-class="none">
+				<text class="cuIcon-discoverfill text-blue"></text>
+				<text class="text-grey">关于</text>
+			</navigator>
+		</view>
+		<view class="cu-item arrow">
+			<button class="cu-btn content" open-type="feedback">
+				<text class="cuIcon-writefill text-blue"></text>
+				<text class="text-grey">意见反馈</text>
+			</button>
+		</view>
+	</view>
+	<view class="cu-tabbar-height"></view>
+</scroll-view>

@@ -1,0 +1,39 @@
+<!--build-->
+<template name="build">
+  <view class="padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="text-sm padding">
+        <text class="text-grey">由腾讯犀牛鸟云开发布道师养成计划驱动</text>
+      </view>
+    </view>
+  </view>
+</template>
+<!--footer-->
+<template name="footer">
+  <view class="padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="text-sm padding">
+        <text class="text-grey">求实 创新 厚德 重艺</text>
+      </view>
+    </view>
+  </view>
+</template>
+<!--copyright-->
+<template name="copyright">
+  <view class="padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="text-sm padding">
+        <text class="text-grey">©1958 - 2020 北京电子科技职业学院</text>
+      </view>
+    </view>
+  </view>
+</template>
+<!--nothing-->
+<template name="nothing">
+  <view class="padding-xs flex align-center nothing">
+    <view class="flex-sub text-center">
+      <image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/nothing.png" mode="widthFix" style="width:200px;height:200px;"></image>
+      <view class="text-lg padding">这里什么都没有</view>
+    </view>
+  </view>
+</template>

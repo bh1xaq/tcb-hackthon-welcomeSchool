@@ -1,0 +1,95 @@
+<import src="/template/template.wxml" />
+<cu-custom bgColor="bg-gradual-blue">
+	<view wx:if="{{showWeather}}" slot="right" class="flex">
+		<view class="cu-avatar round bg-cyan light">
+			<image src="{{weaImg}}" class="round" mode="widthFix"></image>
+		</view>
+		<view class="margin-left-xs" style="display:inline;">
+			<view class="text-sm">{{weaTxt}}</view>
+			<view>{{weaTmp}}</view>
+		</view>
+	</view>
+	<view slot="content">{{appName}}</view>
+</cu-custom>
+<!--主图轮播-->
+<swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+	<swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+		<view class="swiper-item">
+			<image src="{{item.swiperImg}}" data-url="{{item.swiperUrl}}" mode="heightFix" lazy-load="true"></image>
+		</view>
+	</swiper-item>
+</swiper>
+<!--功能区-->
+<view class="cu-bar justify-center">
+	<view class="action sub-title">
+		<text class="text-xl text-bold text-blue">欢迎新同学</text>
+		<text class="text-ABC text-blue">Welcome</text>
+	</view>
+</view>
+<block wx:if="{{isLogin}}">
+	<view class='margin-lr-xl bg-white radius shadow-lg'>
+		<view class="cu-list grid col-3 text-black">
+			<view class="cu-item" bindtap="jumpTo" data-url="../process/process">
+				<view class="iconfont icon-process"></view>
+				<text>注册流程</text>
+			</view>
+			<view class="cu-item" bindtap="jumpTo" data-url="../schoolSurvey/schoolSurvey">
+				<view class="iconfont icon-notice"></view>
+				<text>学校介绍</text>
+			</view>
+			<view class="cu-item" bindtap="jumpTo" data-url="../guide/guide">
+				<view class="iconfont icon-guide"></view>
+				<text>校园导览</text>
+			</view>
+			<view class="cu-item" bindtap="jumpTo" data-url="../receivingStation/receivingStation">
+				<view class="iconfont icon-receiving"></view>
+				<text>预约接站</text>
+			</view>
+			<view class="cu-item" bindtap="jumpTo" data-url="../accommodation/accommodation">
+				<view class="iconfont icon-accommodation"></view>
+				<text>预约住宿</text>
+			</view>
+			<!--你已经是一个成熟的页面了，应该学会自己判断该往哪里跳转了-->
+			<view class="cu-item" bindtap="jumpTo" data-url="{{BDZT?'../checkin/success/success':'../checkin/checkin/checkin'}}">
+				<view class="iconfont icon-register"></view>
+				<text>扫码报道</text>
+			</view>
+		</view>
+	</view>
+</block>
+<!--用户未登录-->
+<block wx:if="{{!isLogin}}">
+	<view class='margin-lr-xl bg-white radius shadow-lg'>
+		<view class="cu-list grid col-3 text-black">
+			<view class="cu-item" bindtap="jumpTo" data-url="../process/process">
+				<view class="iconfont icon-process"></view>
+				<text>注册流程</text>
+			</view>
+			<view class="cu-item" bindtap="jumpTo" data-url="../schoolSurvey/schoolSurvey">
+				<view class="iconfont icon-notice"></view>
+				<text>学校简介</text>
+			</view>
+			<view class="cu-item" bindtap="jumpTo" data-url="../guide/guide">
+				<view class="iconfont icon-guide"></view>
+				<text>校园导览</text>
+			</view>
+		</view>
+	</view>
+	<view class='margin-lr-xl bg-white padding-xl radius shadow-lg flex align-center'>
+		<view class="flex-sub text-center">
+			<view class="text-xsl padding">
+				<image class="img-login" src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/noLogin.png" mode="widthFix"></image>
+			</view>
+		</view>
+		<view class="flex-sub text-center">
+			<view class="margin-bottom-xs">请先登录系统</view>
+			<view>
+				<button class="cu-btn round bg-blue" size="mini" bindtap="jumpTo" data-url="../login/login">点我登录</button>
+			</view>
+		</view>
+	</view>
+</block>
+<!--底部-->
+<view>
+	<template is="copyright"></template>
+</view>

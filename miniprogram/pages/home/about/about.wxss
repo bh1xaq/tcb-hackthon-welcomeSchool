@@ -1,0 +1,18 @@
+/* miniprogram/pages/home/about/about.wxss */
+
+.about {
+  display: flex;
+}
+
+.about image {
+  width: 100%;
+}
+
+.text-content {
+  text-align: justify;
+}
+
+.text-desc {
+  text-indent: 60rpx;
+  text-align: justify;
+}

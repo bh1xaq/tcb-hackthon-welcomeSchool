@@ -1,0 +1,13 @@
+<!--miniprogram/pages/checkin/checkin/checkin.wxml-->
+<import src="/template/template.wxml" />
+<cu-custom class="text-white" isBack="true">
+	<view slot="backText">返回</view>
+</cu-custom>
+<!--Title-->
+<view class="flex justify-center welcome-title animation-slide-bottom" style="animation-delay: 0.3s;">
+	<image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/welcomeTitleImg.png" mode="widthFix"></image>
+</view>
+<!--Button-->
+<view class="flex justify-center welcome-scanf animation-slide-bottom" style="animation-delay: 0.6s;" bindtap="scanfQr">
+	<image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/scanfBtn.png" mode="widthFix"></image>
+</view>

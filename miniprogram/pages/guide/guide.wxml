@@ -1,0 +1,40 @@
+<!--miniprogram/pages/guide/guide.wxml-->
+<import src="../../template/template.wxml" />
+<cu-custom bgColor="bg-gradual-blue" isBack="true">
+	<view slot="backText">返回</view>
+	<view slot="content">校园导览</view>
+</cu-custom>
+<!--功能组件-->
+<view class="bg-white map-menu">
+	<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+		<view class="cu-item {{index==TabCur?'text-blue':''}}" wx:for="{{sceneType}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+			<view data-sceneid="{{item._id}}" bindtap="getScene">{{item.type}}</view>
+		</view>
+	</scroll-view>
+</view>
+<!--导览地图-->
+<map id="guide-map" longitude="{{longitude}}" latitude="{{latitude}}" scale='15' subkey="{{subkey}}" markers="{{markers}}" bindmarkertap="showDetail" bindcallouttap="showDetail">
+</map>
+<!--位置信息详情-->
+<view class="cu-modal bottom-modal {{detailModal?'show':''}}">
+	<view class="cu-dialog">
+		<view class="cu-bar bg-white">
+			<view class="action-left text-blue" bindtap="hideDetailModal">返回</view>
+      <view class="action-right text-black">{{detail.name}}</view>
+		</view>
+		<view style="text-align:left;">
+			<view class="cu-card article no-card">
+				<view class="cu-item shadow">
+					<view class="content">
+						<image src="{{detail.img}}" mode="aspectFill"></image>
+						<view class="desc text-sm desc-text">
+							{{detail.desc}}
+							<view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

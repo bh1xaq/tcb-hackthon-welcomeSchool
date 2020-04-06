@@ -1,0 +1,24 @@
+<!--miniprogram/pages/receivingStation/receivingStation.wxml-->
+<import src="/template/template.wxml" />
+<cu-custom bgColor="bg-gradual-orange" class="text-white" isBack="true">
+	<view slot="backText">返回</view>
+	<view slot="content">预约接站</view>
+</cu-custom>
+<!--大图-->
+<view class="tips">
+	<image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/receivingStation.png" mode="widthFix"></image>
+</view>
+<!--接站表单-->
+<form bindsubmit="setRsForm">
+	<view class="cu-form-group">
+		<view class="title">预约接站</view>
+		<switch name="SFJZ" class="blue sm" bindchange="switchChange" checked="{{SFJZ}}"></switch>
+	</view>
+	<view class="cu-form-group">
+		<textarea name="JZLY" maxlength="-1" disabled="{{!SFJZ}}" value="{{JZLY}}" placeholder="如果您有其他问题，请在此处留言。"></textarea>
+	</view>
+	<view class="cu-form-group">
+		<button class="cu-btn bg-cyan" type="primary" formType="submit">提交</button>
+	</view>
+</form>
+<template is="copyright"></template>

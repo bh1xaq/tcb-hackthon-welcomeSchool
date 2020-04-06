@@ -1,0 +1,13 @@
+/* miniprogram/pages/process/process.wxss */
+
+.process-tips {
+  display: flex;
+}
+
+.process-tips image {
+  width: 100%;
+}
+
+.text-desc {
+  text-align: justify;
+}

@@ -1,0 +1,11 @@
+.img-login {
+  width: 110px;
+}
+
+.img-item {
+  width: 45px;
+}
+
+.cu-list.grid>.cu-item {
+  padding: 30rpx;
+}

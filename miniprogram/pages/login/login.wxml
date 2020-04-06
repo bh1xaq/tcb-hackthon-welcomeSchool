@@ -1,0 +1,58 @@
+<!--miniprogram/pages/login/login.wxml-->
+<import src="/template/template.wxml" />
+<cu-custom class="text-white" isBack="true">
+  <view slot="backText">返回</view>
+  <view slot="content">登录</view>
+</cu-custom>
+<!--LOGO-->
+<view class="flex justify-center school-logo">
+  <image src="https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/logo.png" mode="widthFix"></image>
+</view>
+<!--登录表单-->
+<form bindsubmit="checkLoginForm">
+  <view class="cu-form-group margin">
+    <view class="title">账号</view>
+    <input name="userId" type="number" placeholder="证件号码"></input>
+  </view>
+  <view class="cu-form-group margin">
+    <view class="title">密码</view>
+    <input name="password" type="password" placeholder="统一身份认证密码"></input>
+  </view>
+  <!--帮助按钮-->
+  <view class="margin">
+    <view class="margin-lr-xl margin-bottom-xl text-white help" bindtap="showHelpModal">
+      <text class="cuIcon-tag lg"></text> 获得帮助
+    </view>
+  </view>
+  <!--登录按钮-->
+  <view class="flex flex-direction login-btn">
+    <button class="cu-btn bg-cyan shadow" type="primary" formType="submit">登录</button>
+  </view>
+</form>
+<!--帮助模态窗口-->
+<view class="cu-modal {{helpModal?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">登录帮助</view>
+      <view class="action" bindtap="hideHelpModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      <view class="cu-list">
+        <view class="cu-item">
+          <text>Q：账号密码是什么？</text>
+        </view>
+        <view class="cu-item">
+          <text>A：账号即统一身份认证账号，校园一卡通卡号，学号。新生请查看录取通知书。默认密码是6位生日，为了您的账号安全，请尽快登录智慧校园门户修改密码。</text>
+        </view>
+        <view class="cu-item">
+          <text>Q：忘记密码怎么办？</text>
+        </view>
+        <view class="cu-item">
+          <text>A：请联系信息中心信息系统建设科。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

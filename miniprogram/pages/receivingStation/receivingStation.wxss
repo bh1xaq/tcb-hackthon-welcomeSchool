@@ -1,0 +1,12 @@
+/* miniprogram/pages/receivingStation/receivingStation.wxss */
+.tips {
+  display: flex;
+}
+
+.tips image {
+  width: 100%;
+}
+
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}

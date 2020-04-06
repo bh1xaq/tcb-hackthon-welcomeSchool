@@ -1,0 +1,83 @@
+/* miniprogram/pages/home/index/index.wxss */
+
+.UCenter-bg {
+  background-image: url(https://7765-wel-5kx7f-1301750085.tcb.qcloud.la/images/homeBg.png);
+  background-size: cover;
+  height: 500rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+map, .mapBox {
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;
+  height: 100rpx;
+}
+
+map, .mapBox {
+  width: 750rpx;
+  height: 300rpx;
+}
+
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+  box-shadow: 5px 8px 30px rgba(53, 178, 225, 0.26);
+  margin-bottom: 10px;
+}
+
+.gif-wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;
+  height: 100rpx;
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  80% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.ship {
+  position: absolute;
+  width: 100rpx;
+  z-index: 60;
+  bottom: 8rpx;
+  right: 60rpx;
+  animation: move 10s linear infinite;
+}

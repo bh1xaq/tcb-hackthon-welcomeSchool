@@ -1,0 +1,58 @@
+<!--miniprogram/pages/home/modifyInfo/modifyInfo.wxml-->
+<import src="/template/template.wxml" />
+<cu-custom bgColor="bg-gradual-blue" class="text-white" isBack="true">
+	<view slot="backText">返回</view>
+	<view slot="content">信息维护</view>
+</cu-custom>
+<!--只读表单-->
+<form>
+	<view class="cu-bar bg-white solid-bottom margin-top">
+		<view class="action">
+			<text class="cuIcon-title"></text> 基础信息（修改请联系招生就业处）
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">学号</view>
+		<input name="XH" value="{{XH}}" disabled="true"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">姓名</view>
+		<input name="XM" value="{{XM}}" disabled="true"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">性别</view>
+		<input name="XB" value="{{XB}}" disabled="true"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">学院</view>
+		<input name="XY" value="{{XY}}" disabled="true"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">行政班级</view>
+		<input name="XZBJ" value="{{XZBJ}}" disabled="true"></input>
+	</view>
+</form>
+<!--可写表单-->
+<form bindsubmit="checkUserInfoForm">
+	<view class="cu-bar bg-white solid-bottom margin-top">
+		<view class="action">
+			<text class="cuIcon-title text-blue"></text> 信息采集
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">联系电话</view>
+		<input name="LXDH" value="{{LXDH}}" type="number" placeholder="请输入本人联系电话"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">银行卡号</view>
+		<input name="YHKH" value="{{YHKH}}" type="number" placeholder="请输入银行卡号"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">身份证号</view>
+		<input name="SFZH" value="{{SFZH}}" placeholder="请输入公民身份证号"></input>
+	</view>
+	<view class="cu-form-group">
+		<button class="cu-btn bg-cyan" type="primary" formType="submit">提交</button>
+	</view>
+</form>
+<template is="copyright"></template>

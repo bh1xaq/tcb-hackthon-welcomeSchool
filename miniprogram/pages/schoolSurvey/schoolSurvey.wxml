@@ -1,0 +1,11 @@
+<!--miniprogram/pages/schoolSurvey/schoolSurvey.wxml-->
+<import src="/template/template.wxml" />
+<cu-custom class="text-white" style="float:left;" isBack="true">
+	<view slot="backText">返回</view>
+</cu-custom>
+<!--全屏轮播-->
+<swiper circular="true" vertical="true" easing-function="easeInOutCubic">
+	<swiper-item wx:for="{{schoolSurvey}}">
+		<image src="{{item.src}}" mode="scaleToFill"></image>
+	</swiper-item>
+</swiper>

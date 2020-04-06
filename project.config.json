@@ -1,0 +1,154 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wxcd6445d47fdde0a1",
+	"projectname": "tcb-hackthon-welcomeSchool",
+	"libVersion": "2.10.3",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/process/process",
+					"pathName": "pages/process/process",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/notice/notice",
+					"pathName": "pages/notice/notice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/guide/guide",
+					"pathName": "pages/guide/guide",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/about/about",
+					"pathName": "pages/home/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/index/index",
+					"pathName": "pages/home/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/card/card",
+					"pathName": "pages/home/card/card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/home/modifyInfo/modifyInfo",
+					"pathName": "pages/home/modifyInfo/modifyInfo",
+					"query": "userId=123",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/receivingStation/receivingStation",
+					"pathName": "pages/receivingStation/receivingStation",
+					"query": "userId=123",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/checkin/checkin/checkin",
+					"pathName": "pages/checkin/checkin/checkin",
+					"query": "userId=123",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/checkin/success/success",
+					"pathName": "pages/checkin/success/success",
+					"query": "userId=123",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/schoolSurvey/schoolSurvey",
+					"pathName": "pages/schoolSurvey/schoolSurvey",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/guide/guide",
+					"pathName": "pages/guide/guide",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bigData/bigData",
+					"pathName": "pages/bigData/bigData",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}
