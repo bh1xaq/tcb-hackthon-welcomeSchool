@@ -1,5 +1,7 @@
 # i 电科迎新
 
+![i电科迎新](https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool/raw/master/demo/showTime.jpg)
+
 ## 项目介绍
 
 i 电科迎新是一款基于 Tencent Cloud Base 的高校迎新小程序。本小程序以北京电子科技职业学院的迎新工作为模型进行开发，集合了学生注册流程提示、学校介绍、校园导览、预约接站、预约住宿、电子校园卡、新生数据采集、迎新大数据（管理员）等功能。
@@ -83,7 +85,7 @@ i 电科迎新是一款基于 Tencent Cloud Base 的高校迎新小程序。本�
 
 ## 项目演示
 
-运行演示截图见 demo 文件夹。
+运行演示截图见 [demo](https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool/tree/master/demo) 文件夹。
 
 ## 分支说明
 
