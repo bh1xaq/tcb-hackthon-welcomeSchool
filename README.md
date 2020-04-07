@@ -140,9 +140,10 @@ $ git clone -b master https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool.git
 - 学生：1080
 - 密码均为 123456
 
-## 移植
+## 二次开发
 
-通过直接替换素材可直接移植。
+- 快速启动并通过直接替换素材可实现直接移植。
+- 参照[开发文档](https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool/wikis/Home)
 
 ## 作者信息
 
