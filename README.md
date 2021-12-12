@@ -1,6 +1,6 @@
 # i 电科迎新
 
-![i电科迎新](https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool/raw/master/demo/showTime.jpg)
+![i电科迎新](https://gitee.com/BH1XAQ/tcb-hackthon-welcomeSchool/raw/master/demo/showTime.jpg)
 
 ## 项目介绍
 
@@ -69,7 +69,7 @@ i 电科迎新是一款基于 Tencent Cloud Base 的高校迎新小程序。本�
 
 ## 更新日志
 
-[commits](https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool/commits/master)
+[commits](https://gitee.com/BH1XAQ/tcb-hackthon-welcomeSchool/commits/master)
 
 ## 后续计划
 
@@ -85,7 +85,7 @@ i 电科迎新是一款基于 Tencent Cloud Base 的高校迎新小程序。本�
 
 ## 项目演示
 
-运行演示截图见 [demo](https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool/tree/master/demo) 文件夹。
+运行演示截图见 [demo](https://gitee.com/BH1XAQ/tcb-hackthon-welcomeSchool/tree/master/demo) 文件夹。
 
 ## 分支说明
 
@@ -105,7 +105,7 @@ i 电科迎新是一款基于 Tencent Cloud Base 的高校迎新小程序。本�
 ### 2.下载代码
 
 ```bash
-$ git clone -b master https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool.git
+$ git clone -b master https://gitee.com/BH1XAQ/tcb-hackthon-welcomeSchool.git
 ```
 
 ### 3.导入微信开发者工具
@@ -143,7 +143,7 @@ $ git clone -b master https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool.git
 ## 二次开发
 
 - 快速启动并通过直接替换素材可实现直接移植。
-- 参照[开发文档](https://gitee.com/TXisfine/tcb-hackthon-welcomeSchool/wikis/Home)
+- 参照[开发文档](https://gitee.com/BH1XAQ/tcb-hackthon-welcomeSchool/wikis/Home)
 
 ## 作者信息
 
